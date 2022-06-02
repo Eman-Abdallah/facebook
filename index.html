@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Facebook</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<!-- navbar in large screen -->
+<nav>
+    <div class="container">
+        <!-- logo -->
+        <div class="log d-flex">
+            <!-- logo in tablet -->
+            <div class="user-info d-none">
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+            <div class=" d-flex">
+                <img src="/img/Facebook-f_Logo-Blue-Logo.wine.svg" height="40px" alt="">
+                <div class="input-icons">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Search Facebook">
+                </div>
+            </div>
+
+            <div class="mesanger d-none">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+
+            </div>
+        </div>
+        <!-- center icons -->
+        <div class="icons d-flex">
+            <div class="active ">
+                <a href="#home">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+
+            </div>
+            <div class="friends">
+                <a href="/friends.html">
+                    <i class="fa-solid fa-user-group"></i>
+                </a>
+
+            </div>
+            <div class="watch">
+                <span class="badge ">9+</span>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+            <div class="groups">
+                <a href="">
+                    <i class="fa-solid fa-users"></i>
+                </a>
+
+            </div>
+            <div class="games">
+                <span class="badge ">9+</span>
+                <a href="">
+                    <i class="fa-solid fa-dice-d20"></i>
+                </a>
+
+            </div>
+            <div class="bars">
+                <a href="/list.html">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- user icons -->
+        <div class="user d-flex">
+            <div class="info">
+                <a href="" class="d-flex">
+                    <i class="fa-solid fa-user"></i>
+                    <h6>Eman</h6>
+                </a>
+
+            </div>
+            <div class="menu ">
+                <a href=" ">
+                    <i class="fa-solid fa-bars "></i>
+                </a>
+
+            </div>
+            <div class="mesanger">
+                <a href="">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+
+            </div>
+            <!-- notification drop down -->
+            <div class="dropdown notification">
+                <span id="badg" class="badge">2</span>
+                <button class="dropbtn2" onclick="Function2()">
+                    <i id="clicked2" class="fa-solid fa-bell"></i>
+                </button>
+
+            </div>
+            <!-- profile dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                    <i id="clicked" class="fa-solid fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- navbar in mobile devices -->
+<div id="mobile">
+
+    <div class="container">
+        <div class="logo">
+            <img src="/img/60d5dbf40f3e87001efa16c1.png" width="70px" alt="">
+        </div>
+        <div class="icon">
+            <div class="icon1">
+                <a href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+            <div class="icon1">
+                <a href="">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="icons d-flex">
+        <div class="active ">
+            <a href="">
+                <i class="fa-solid fa-house"></i>
+            </a>
+
+        </div>
+        <div class="friends">
+            <a href="./friends.html">
+                <i class="fa-solid fa-user-group"></i>
+            </a>
+
+        </div>
+        <div class="shop">
+
+            <a href="">
+                <i class="fa-solid fa-shop"></i>
+            </a>
+
+        </div>
+        <div class="groups">
+            <a href="">
+                <i class="fa-solid fa-users"></i>
+            </a>
+
+        </div>
+        <div class="notification">
+            <span id="badg" class="badge ">9+</span>
+            <button class="dropbtn2" onclick="Function2()">
+                <i class="fa-solid fa-bell"></i>
+        </button>
+
+        </div>
+        <div class="bars">
+            <a href="/list.html">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+</div>
+<!-- profile dropdown-content -->
+<div class="dropdown-content" id="dropdown">
+    <div class="info d-flex">
+        <a href="#">
+            <i class="fa-solid fa-user "></i>
+        </a>
+        <div>
+            <h6>Eman AbdAllah</h6>
+            <span>See your profile</span>
+        </div>
+    </div>
+
+    <hr>
+    <a href="# " class="d-flex ">
+        <i class="fa-solid fa-gear "></i>
+        <span>Setting & Privacy</span>
+    </a>
+    <a href="# " class="help d-flex ">
+        <i class="fa-solid fa-question "></i>
+        <span>Help & Support</span>
+    </a>
+    <a href="# " class="d-flex ">
+        <i class="fa-solid fa-moon "></i>
+        <span>Display & Accessability</span>
+    </a>
+    <a href="# " class="feed d-flex ">
+        <i class="fa-solid fa-exclamation "></i>
+        <span>Give feed back</span>
+    </a>
+    <a href="# " class="d-flex ">
+        <i class="fa-solid fa-right-from-bracket "></i>
+        <span>Log Out</span>
+    </a>
+    <span class="footer ">Privacy · Terms · Advertising · Ad Choices · Cookies · · Meta &copy; 2022</span>
+</div>
+<!-- notification dropdown-content -->
+<div class="dropdown-content2" id="dropdown2">
+    <div class="one d-flex">
+        <h3>
+            Notifications
+        </h3>
+        <a href="#">
+            <i class="fa-solid fa-ellipsis"></i>
+        </a>
+    </div>
+    <div class="two d-flex">
+        <button>ALL</button>
+        <button class="btn">Unread</button>
+    </div>
+    <div class="three d-flex">
+        <h6>Earlier</h6>
+        <a href="">See All</a>
+    </div>
+
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+    <div class="four d-flex">
+        <img src="/img/download (1).jpg" class="circle" width="40px" height="40px" alt="">
+        <div>
+            <p><span>Person Name</span> is live no🔥💥.
+            </p>
+            <p class="small">23 minutes ago</p>
+        </div>
+    </div>
+</div>
+<!-- main page -->
+<section id="main" class="bg-light ">
+    <div class="container mt-10 ">
+        <!-- left side bar -->
+        <div id="info-list">
+            <ul>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <i class="fa-solid fa-user "></i>
+                        <h6>Eman AbdAllah</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <img src="/img/P3LEV6Y0FCf.png " height="20px " alt=" ">
+                        <h6>Friends</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <img src="/img/ob1CgXwDORG.png " height="20px " alt=" ">
+                        <h6>Watch</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <img src="/img/L2qlIhGe55v.png " height="20px " alt=" ">
+                        <h6>Groups</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <img src="/img/P82afdZb-gc.png " height="20px " alt=" ">
+                        <h6>Marketplace</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <img src="/img/24MgFlPfCs5.png " height="20px " alt=" ">
+                        <h6>Memories</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <img src="/img/EygD86pCwoD.png " height="20px " alt=" ">
+                        <h6>Saved</h6>
+                    </a>
+                </li>
+                <li class="info ">
+                    <a href=" " class="d-flex ">
+                        <i class="fa-solid fa-circle-chevron-down "></i>
+                        <h6>See More</h6>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <h3 class="p-10 ">Your shortcuts</h3>
+            <ul>
+                <li class="shortcut ">
+                    <a href=" " class="d-flex ">
+                        <img class="border-10 " height="30px " src="/img/185232554_10225514034296438_7864788548327301494_n.png " alt=" ">
+                        <h6>Elzero Web School</h6>
+                    </a>
+                </li>
+                <li class="shortcut ">
+                    <a href=" " class="d-flex ">
+                        <img class="border-10 " height="30px " src="/img/21880393_1560764197296210_4443457994893557760_n.png " alt=" ">
+                        <h6>Candy Crush Jelly Saga</h6>
+                    </a>
+                </li>
+                <li class="shortcut ">
+                    <a href=" " class="d-flex ">
+                        <img class="border-10 " height="30px " src="/img/22088589_1654976451201719_5191478939503034368_n.png " alt=" ">
+                        <h6>Candy Crush Saga</h6>
+                    </a>
+                </li>
+            </ul>
+            <span class="footer ">Privacy · Terms · Advertising · Ad Choices · Cookies · <br> · Meta &copy; 2022</span>
+        </div>
+        <!-- home -->
+        <div id="home">
+            <!-- stories -->
+            <div class="stories d-flex ">
+                <div class="story ">
+                    <img src="/img/photo-1555445091-5a8b655e8a4a.jpg " height="150px " width="80px " alt=" ">
+                </div>
+                <div class="story ">
+                    <img src="/img/pexels-lukas-rodriguez-3680219.jpg " height="150px " width="80px " alt=" ">
+                </div>
+                <div class="story ">
+                    <img src="/img/images (1).jpg " height="150px " width="80px " alt=" ">
+                </div>
+                <div class="story ">
+                    <img src="/img/images.jpg " height="150px " width="80px " alt=" ">
+                </div>
+                <div class="story ">
+                    <img src="/img/download.jpg " alt=" " " height="150px " width="80px ">
+                </div>
+                <div class="story ">
+                    <img src="/img/a511707377b4332b85a8d90fbcfb20fe.jpg " height="150px " width="80px " alt=" ">
+                </div>
+            </div>
+                <!--what's in your mind    -->
+            <div class="idea bg-white p-10 ">
+                <div class="mind ">
+                    <a href="# " class="d-flex ">
+                        <i class="fa-solid fa-user "></i>
+                        <input type="text " placeholder="What 's on your mind,Eman ? ">
+                    </a>
+                </div>
+                <hr>
+                <div class="upload d-flex ">
+                    <div class=" up video d-flex">
+                        <img src="/img/video-call-xxl.png" height="20px" alt="">
+                        <h6>Live Video</h6>
+                    </div>
+
+                    <div class=" up d-flex">
+                        <img src="/img/download.png" height="20px" alt="">
+                        <h6> Photo/Video</h6>
+                    </div>
+
+                    <div class="up feel d-flex">
+                        <img src="/img/pngtree-vector-happy-emoticon-icon-png-image_313015.jpg" height="20px" alt="">
+                        <h6>Feeling/Activity</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- only show in mobile -->
+            <div class="rooms d-none bg-white">
+                <div class="d-flex">
+                    <div class="story active">
+                        <a href="">Stories</a>
+                    </div>
+                    <div class="story">
+                        <a href="">Reels</a>
+                    </div>
+                    <div class="story">
+                        <a href="">Rooms</a>
+                    </div>
+                </div>
+            </div>
+            <!-- go live -->
+            <div class="live bg-white d-flex  mt-10 m-auto border-10">
+                <button class="create">
+                    <img src="/img/video-marketing-movie-camera.svg"  alt=""> <span>Create Room</span>
+                </button>
+                <img src="/img/bill-gates-wealthiest-person.jpg" class="circle" height="30px" width="30px" alt="">
+                <img src="/img/Kayla-Person.jpg" class="circle" height="30px" width="30px" alt="">
+                <img src="/img/GettyImages-887815620.jpg" class="circle" height="30px" width="30px" alt="">
+                <img src="/img/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg" class="circle" height="30px" width="30px" alt="">
+                <img src="/img/Describe-a-polite-person-whom-you-know.webp" class="circle" height="30px" width="30px" alt="">
+                <img src="/img/Complete-Care-Agency-Young-person-2.png" class="circle" width="30px" height="30px" alt="">
+                <img src="/img/s960_Universities_Minister_Michelle_Donelan.jpeg" class="circle" width="30px" height="30px" alt="">
+                <img src="/img/Personnel image 4483.jpg" class="circle" height="30px" width="30px" alt="">
+                <img src="/img/origin_277123912.webp" class="circle" height="30px" width="30px" alt="">
+
+            </div>
+            <!-- first post -->
+            <div class="post bg-white  ">
+                <div class="d-flex p-10" style="justify-content:space-between ;">
+                <div class="one d-flex  ">
+                    <img src="/img/236364018_367807884966772_1490259823167715088_n (1).png" class="circle" height="30px" width="30px" alt="">
+                    <h6>
+                        BrightChamps
+                    </h6>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="two">
+                    <p>
+                        If you're a Scratch user, you won 't want to miss out on these new blocks in the latest version, Scratch 3.0. Find out everything you need to know about them right here!
+                        <br>
+                        <a href="">https://brightchamps.com/blog/new-code-blocks-in-scratch-3/</a>
+                    </p>
+                </div>
+                <div class="three mt-10">
+                    <img src="/img/safe_image.jpg" alt="">
+                </div>
+                <div class="four d-flex">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Comment</span>
+                       
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- second post -->
+            <div class="post bg-white  border-10">
+                <div class="d-flex p-10" style="justify-content:space-between ;">
+                    <div class="one d-flex  ">
+                        <img src="/img/23755664_1516454068434902_7413019976243592343_n.png" class="circle" height="30px" width="30px" alt="">
+                        <h6>
+                            Udacity
+                        </h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+               
+                <div class="two">
+                    <p style="direction: rtl;">
+
+                        عندك خبرة في الData Analysis ونفسك تدخل مجال الـ machine learning؟<br> طوّر من مهاراتك في عالم الـ machine leaning واتعلم الsupervised learning في الكورس اللي بتقدمه منحة egFWD وخليك جاهز لسوق العمل. <br> سجل في كورس الMachine
+                        Learning من اللينك: <a href="">https://egfwd.com/specializtion/machine-learning/ </a>
+
+                    </p>
+                </div>
+                <div class="three mt-10">
+                    <img src="/img/277233361_23850152163310486_3263432830863384980_n.jpg" width="500px" height="300px" alt="">
+                </div>
+                <div class="four d-flex">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Comment</span>
+                       
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- third post -->
+            <div class="post bg-white  border-10">
+                <div class="d-flex p-10" style="justify-content:space-between ;">
+                <div class="one d-flex  ">
+                    <img src="/img/236364018_367807884966772_1490259823167715088_n (1).png" class="circle" height="30px" width="30px" alt="">
+                    <h6>
+                        BrightChamps
+                    </h6>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="two">
+                    <p>
+                        Free 1 Hour Coding Class for kids <br> 1 on 1 live session. 💻<br> BOOK NOW. Age 6-16 Only.
+                    </p>
+                </div>
+                <div class="three mt-10">
+                    <img src="/img/251091759_23849352220100754_8345259795331308529_n.jpg" width="500px" height="300px" alt="">
+                </div>
+                <div class="four d-flex">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-message"></i>
+                        <span>Comment</span>
+                       
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-share"></i>
+                        <span>Share</span>
+                       
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <!-- right side bar -->
+        <div id="ads">
+                <ul>
+                    <h3>Sponsored</h3>
+                    <li class="ads1 ">
+                        <a href=" " class="d-flex ">
+                            <img src="/img/251098714_23849577027080754_1029708109430279061_n.jpg " height="100px " class="border-10" alt=" ">
+                            <p>U.S Software Programming Jobs. Work Remotely. No Visa needed. Full time jobs. High salary.</p>
+                        </a>
+                    </li>
+                    <li class="ads1 ">
+                        <a href=" " class="d-flex ">
+                            <img src="/img/277110853_23850152061120486_4962009598254098410_n.jpg " height="100px " class="border-10" alt=" ">
+                            <p>Make your kid a Tech Leader,Book Now and Get Certified </p>
+                        </a>
+                    </li>
+                </ul>
+
+            <hr>
+                <h3>Your Pages</h3>
+            <ul>
+                <li class="pages ">
+                    <a href="" class="d-flex">
+                        <img class="border-10 " height="30px" src="/img/273047887_7111529082255702_3680324192998460535_n.jpg" alt="">
+                        <h6> Lotus Academy أكاديمية اللوتس للتدريب</h6>
+                    </a>
+                </li>
+                <li class="pages page1 ">
+                    <a href="" class="d-flex">
+                        <i class="fa-solid fa-bell  "></i>
+                        <h6>Notification</h6>
+                    </a>
+                </li>
+                <li class="pages  page1 ">
+                    <a href="" class="d-flex">
+
+                        <i class="fa-solid fa-earth-oceania "></i>
+                        <h6>Create Promotion</h6>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="contact d-flex">
+                <h3>Contacts</h3>
+                <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="d-flex">
+                    <img src="/img/bill-gates-wealthiest-person.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Bill Gates</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/Kayla-Person.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/GettyImages-887815620.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/Describe-a-polite-person-whom-you-know.webp" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/Complete-Care-Agency-Young-person-2.png" class="circle" width="25px" height="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/Kayla-Person.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/GettyImages-887815620.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/Describe-a-polite-person-whom-you-know.webp" class="circle" height="25px" width="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+                <div class="d-flex">
+                    <img src="/img/Complete-Care-Agency-Young-person-2.png" class="circle" width="25px" height="25px" alt="">
+                    <span>Kayla Smith</span>
+                </div>
+            </div>
+            <hr>
+            <h3>Group Conversation</h3>
+            <div class="group d-flex">
+                <i class="fa-solid fa-plus  circle"></i>
+                Create new group
+            </div>
+        </div>
+    </div>
+
+    </section>
+        <script src="https://kit.fontawesome.com/8a91cc8e03.js " crossorigin="anonymous "></script>
+        <script src="/script.js"></script>
+        </body>
+
+</html>
